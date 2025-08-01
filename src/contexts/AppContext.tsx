@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useReducer, ReactNode } from 'react';
 
 export interface User {
@@ -41,6 +40,7 @@ export interface ThemeSettings {
   color: string;
   font: string;
   image?: string;
+  template?: string;
 }
 
 interface AppState {
@@ -70,7 +70,8 @@ const initialState: AppState = {
   resumeFormData: {},
   themeSettings: {
     color: 'purple',
-    font: 'Inter'
+    font: 'Inter',
+    template: 'modern-dev'
   },
   generatedUrl: null,
   isLoading: false
