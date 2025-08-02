@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useApp } from '@/contexts/AppContext';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Eye } from 'lucide-react';
-import { ResumeEditor } from '@/components/edit/ResumeEditor';
+import { DragDropResumeEditor } from '@/components/edit/DragDropResumeEditor';
 
 const EditPage = () => {
   const { state } = useApp();
@@ -43,7 +43,7 @@ const EditPage = () => {
       </div>
 
       <div className="container mx-auto px-4 py-8">
-        <ResumeEditor />
+        <DragDropResumeEditor />
       </div>
     </div>
   );
