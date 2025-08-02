@@ -580,15 +580,4 @@ body {
     return `${window.location.origin}/portfolio/${portfolioId}`;
   }
 
-  async exportToZip(portfolio: GeneratedPortfolio): Promise<Blob> {
-    // This would typically use a library like JSZip
-    // For now, we'll create a simple blob with the HTML content
-    return new Blob([portfolio.html], { type: 'text/html' });
-  }
-
-  async generateShareableUrl(portfolio: GeneratedPortfolio): Promise<string> {
-    // This would typically involve uploading to a server
-    // For now, we'll return the URL from the portfolio object
-    return portfolio.url;
-  }
 }
